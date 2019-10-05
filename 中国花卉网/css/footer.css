@@ -1,0 +1,32 @@
+#footer{
+	width:1350px;
+	height:200px;
+	background-color:#2f2f2f;
+	color:white;	
+}
+#footer a{
+	color:white;
+}
+#footer li{
+	float:left;
+}
+#footer span{
+	display: inline-block;
+	width:73px;
+	text-align: center;
+}
+#footer ul{
+	width:1080px;
+	margin:0 auto;
+	padding-top:30px;
+	font-size: 13px;
+}
+.bot{
+	text-align: center;
+	position: relative;
+	top:50px;
+}
+.bot p{
+	line-height: 20px;
+	font-size: 12px;
+}

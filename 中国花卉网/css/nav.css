@@ -1,0 +1,53 @@
+#nav{
+	width:1200px;
+	height:550px;
+	margin:0 auto;
+}
+.nav_head span{
+	color:#6d6d6d;
+	display: block;
+	height:50px;
+	font-size: 25px;
+	margin-top: 65px;
+	font-family: '宋体';
+	background-color: white;
+	text-align: center;
+}
+#nav .nav_head:after{
+	content:'';
+	width:500px;
+	height:0;
+	border:1px solid #d1d1d1;
+	display: block;
+	position: relative;
+	top:-38px;
+	left:700px;	
+}
+#nav span:after{
+	content:'';
+	width:500px;
+	height:0;
+	border:1px solid #d1d1d1;
+	display: block;
+	position: relative;
+	top:-17px;	
+}
+.image .aa{
+	margin-top: 25px;
+}
+#nav .image .aa{
+	width:388px;
+	height:388px;
+	float:left;
+}
+.image .bb{
+	float:right;
+	width:800px;	
+}
+  .image .bb img{
+	width: 180px;
+	height:180px;
+	margin-left:20px;
+	margin-top: 25px;
+	float:left;
+}
