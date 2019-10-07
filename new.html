@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            width:200px;
+            height:200px;
+            background-color: blueviolet;
+            margin-top:50%;
+            margin-left:50%;
+            text-align: center;
+            justify-content: center;
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+<button id="open">打开</button>
+<button id="close">关闭</button>  
+<script>
+//弹框
+var diglo={
+    oDiv:null,
+    init:function(){
+        this.getE()
+        this.createE()
+        this.eClick()
+    },//执行入口
+    getE:function(){
+        this.open = document.getElementById('open')
+        this.close = document.getElementById('close')
+    },//获取元素
+    createE:function(){
+        this.oDiv=document.createElement('div');
+        document.body.appendChild(this.oDiv);
+    },//创建元素
+    eClick:function(){
+        var _this=this
+        this.open.onclick=function(){
+            if(this.oDiv){
+                _this.oDiv.style.display='block';
+            }
+            else{
+                _this.createE()
+            }
+        }
+        this.close.onclick=function(){
+            _this.oDiv.style.display='none';
+        }
+    }//绑定事件
+}
+diglo.init()
+   
+</script>
+</body>
+</html>
