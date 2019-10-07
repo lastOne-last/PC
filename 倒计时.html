@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      //var deadline= getTime('2019/10/07 22:14:00')
+      var timeout=function(){
+       var a=new Date('2019/10/07 22:28:00')
+      var b=new Date()
+      var time=a-b 
+      if(time<=0){
+        return '00:00:00'
+        clearInterval(timer)
+          }
+      else{
+      var hour=Math.floor(time/1000/60/60)
+        if(hour<10){
+            hour='0'+hour
+        }
+      var minute=Math.floor((time-hour*60*60*1000)/1000/60)
+      if(minute<10){
+            minute='0'+minute
+        }
+      var second=Math.floor((time-hour*60*60*1000-minute*60*1000)/1000)
+      if(second<10){
+            second='0'+second
+        }
+      return hour+":"+minute+":"+second
+         }
+      }
+    //   setTimeout(function(){
+    //       document.body.innerHTML=timeout()
+    //   }
+    //  ,0)
+     setTimeout(function(){
+          document.body.innerHTML=timeout()
+      }, 0);
+      timer=setInterval(function(){
+          document.body.innerHTML=timeout()
+      }
+     ,1000)
+     
+        
+    </script>
+</body>
+</html>
