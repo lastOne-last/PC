@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            #main{
+                width:300px;
+                height:300px;
+                /* height:350px; */
+                margin:100px auto;
+            }
+            /* li{
+                width:100px;
+                height:50px;
+                float:left;
+                text-align: center;
+                line-height: 50px;
+                list-style: none;
+                background-color: darkcyan;
+            } */
+            img{
+                width:300px;
+                height:300px;
+                display: none;
+            }
+            div .active{
+                display: block;
+            }
+            .next{
+                float:right;
+            }
+            button{
+                position: relative;
+                top:150px;
+                background-color: transparent;
+                border:none;
+                color: rgb(54, 22, 240);
+                font-size: 20px;
+            }
+            /* div ul .active{
+                background-color: darkblue;
+            } */
+        </style>
+</head>
+<body>
+        <div id="main">
+                <!-- <ul>
+                    <li class="active">图片一</li>
+                    <li>图片二</li>
+                    <li>图片三</li>
+                </ul> -->
+                <button class="next">下一张</button>
+                <button class="over">上一张</button>
+                <img class="active" src="http://pic60.nipic.com/file/20150129/6448355_204110337000_2.jpg">
+                <img src="http://pic39.nipic.com/20140320/12795880_110914420143_2.jpg">
+                <img src="http://pic27.nipic.com/20130315/11511914_151013608193_2.jpg">
+                <img src="http://pic27.nipic.com/20130321/9678987_225139671149_2.jpg">
+                <img src="http://pic22.nipic.com/20120725/9676681_001949824394_2.jpg">
+                <img src="http://pic16.nipic.com/20111006/6239936_092702973000_2.jpg">
+                <img src="http://pic26.nipic.com/20130121/9252150_101440518391_2.jpg">
+                <img src="http://pic38.nipic.com/20140228/2457331_083845176000_2.jpg">
+                <img src="http://pic51.nipic.com/file/20141025/8649940_220505558734_2.jpg">
+                <img src="http://pic39.nipic.com/20140321/18063302_210604412116_2.jpg">
+            </div>
+            <script>
+                var oDiv=document.getElementById('main')
+                var obt=oDiv.getElementsByTagName('button')
+        // var oli=oDiv.getElementsByTagName('li')
+                var omg=oDiv.getElementsByTagName('img')
+                for(var i=0;i<omg.length;i++){
+                    omg.index=i
+                    obt[0].onclick=function(){
+                        i++
+                        if(i>9){
+                            i=0
+                        }
+                    for(var j=0;j<omg.length;j++){
+                        omg[j].className=''
+                    }
+                   omg[i].className='active'}
+                   obt[1].onclick=function(){
+                        i--
+                        if(i<0){
+                            i=9
+                        }
+                    for(var j=0;j<omg.length;j++){
+                        omg[j].className=''
+                    }
+                   omg[i].className='active'}
+                   
+                }
+               
+                  
+                        
+                        
+                        // if(i<0){
+                        //     i=2
+                        //     }})(i)
+        
+            </script>
+</body>
+</html>
+
+    
+
+
+    
+        
