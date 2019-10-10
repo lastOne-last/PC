@@ -44,6 +44,8 @@ html{
 	line-height: 0.84rem;
 	margin:0 auto;
 	border-radius:0.36rem;
+	font-size: 0.25rem;
+	
 }
 .head img{
 	width:7.73rem;
@@ -142,7 +144,7 @@ html{
 	margin-right: 1.2rem;
 }
 .footer ul{
-	width:7.8rem;
+	width:8.28rem;
 	height:1.1rem;
 	margin:0.12rem auto;		
 }
@@ -154,3 +156,4 @@ html{
 	margin:0 auto;
 	margin-bottom:0.12rem;
 }
+
